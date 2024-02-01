@@ -14,12 +14,13 @@ c.fillRect(0, 0, canvas.width, canvas.height);
 const gravity = 0.7;
 
 // Создаем спрайт для фона
+const cave = `img/6.png`
 const background = new Sprite({
     position: {
         x: 0,
         y: 0
     },
-    imageSrc: `img/6.png`
+    imageSrc: cave
 });
 
 // Создаем спрайт для летучей мыши
