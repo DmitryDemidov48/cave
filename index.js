@@ -1,3 +1,4 @@
+
 // Получаем ссылку на элемент canvas и его 2D контекст
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
@@ -18,7 +19,7 @@ const background = new Sprite({
         x: 0,
         y: 0
     },
-    imageSrc: `../img/6.png`
+    imageSrc: `img/6.png`
 });
 
 // Создаем спрайт для летучей мыши
@@ -27,7 +28,7 @@ const Bat = new Sprite({
         x: 300,
         y: 100
     },
-    imageSrc: `../img/Bat1.png`,
+    imageSrc: `img/Bat1.png`,
     scale: 3,
     framesMax: 4
 });
@@ -46,7 +47,7 @@ const player = new Fighter({
         x: 0,
         y: 0
     },
-    imageSrc: `../img/Musketeer/Idle.png`,
+    imageSrc: `img/Musketeer/Idle.png`,
     framesMax: 5,
     scale: 2,
     offset: {
@@ -56,31 +57,31 @@ const player = new Fighter({
     // Спрайты для различных действий игрока
     sprites: {
         idle: {
-            imageSrc: `../img/Musketeer/Idle.png`,
+            imageSrc: `img/Musketeer/Idle.png`,
             framesMax: 5,
         },
         run: {
-            imageSrc: `../img/Musketeer/Run.png`,
+            imageSrc: `img/Musketeer/Run.png`,
             framesMax: 8,
         },
         jump: {
-            imageSrc: `../img/Musketeer/Dead.png`,
+            imageSrc: `img/Musketeer/Dead.png`,
             framesMax: 7,
         },
         fall: {
-            imageSrc: `../img/Musketeer/Hurt.png`,
+            imageSrc: `img/Musketeer/Hurt.png`,
             framesMax: 2,
         },
         attack1: {
-            imageSrc: `../img/Musketeer/Attack_4.png`,
+            imageSrc: `img/Musketeer/Attack_4.png`,
             framesMax: 5,
         },
         takeHit: {
-            imageSrc: `../img/Musketeer/Hurt.png`,
+            imageSrc: `img/Musketeer/Hurt.png`,
             framesMax: 2,
         },
         death: {
-            imageSrc: `../img/Musketeer/Dead.png`,
+            imageSrc: `img/Musketeer/Dead.png`,
             framesMax: 4,
         }
     },
@@ -110,7 +111,7 @@ const enemy = new Fighter({
         y: 0
     },
     color: 'blue',
-    imageSrc: `../img/1/Idle.png`,
+    imageSrc: `img/1/Idle.png`,
     framesMax: 4,
     scale: 2,
     offset: {
@@ -120,31 +121,31 @@ const enemy = new Fighter({
     // Спрайты для различных действий врага
     sprites: {
         idle: {
-            imageSrc: `../img/1/Idle.png`,
+            imageSrc: `img/1/Idle.png`,
             framesMax: 4,
         },
         run: {
-            imageSrc: `../img/1/Walk.png`,
+            imageSrc: `img/1/Walk.png`,
             framesMax: 6,
         },
         jump: {
-            imageSrc: `../img/1/Death.png`,
+            imageSrc: `img/1/Death.png`,
             framesMax: 6,
         },
         fall: {
-            imageSrc: `../img/1/Hurt.png`,
+            imageSrc: `img/1/Hurt.png`,
             framesMax: 4,
         },
         attack1: {
-            imageSrc: `../img/1/Attack4.png`,
+            imageSrc: `img/1/Attack4.png`,
             framesMax: 6,
         },
         takeHit: {
-            imageSrc: `../img/1/Hurt.png`,
+            imageSrc: `img/1/Hurt.png`,
             framesMax: 4,
         },
         death: {
-            imageSrc: `../img/1/Death.png`,
+            imageSrc: `img/1/Death.png`,
             framesMax: 6,
         }
     },
